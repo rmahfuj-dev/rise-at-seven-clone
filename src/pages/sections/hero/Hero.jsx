@@ -4,11 +4,13 @@ import globalsearch from "../../../assets/images/hero/global-search.png";
 import contentaward from "../../../assets/images/hero/content-award.png";
 import thedrum from "../../../assets/images/hero/the-drum.png";
 import uksocial from "../../../assets/images/hero/uk-social.png";
+import redbull from '../../../assets/images/hero/redbull.png'
+import emirates from '../../../assets/images/hero/emirates.webp'
+import austornot from '../../../assets/images/hero/austornot.png'
 
 const images = [
-  "https://cdn.flyonui.com/fy-assets/components/carousel/image-21.png",
-  "https://cdn.flyonui.com/fy-assets/components/carousel/image-14.png",
-  "https://cdn.flyonui.com/fy-assets/components/carousel/image-7.png",
+  redbull,
+emirates,redbull,austornot
 ];
 
 export default function Hero() {
@@ -27,10 +29,10 @@ export default function Hero() {
       <img
         src={images[index]}
         alt="background"
-        className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl transition-all duration-700"
+        className="absolute inset-0 w-full h-full object-cover scale-110 blur-lg transition-all duration-700"
       />
 
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 " />
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
         <div className="flex flex-col items-center gap-10 text-center max-w-7xl w-full">
@@ -73,7 +75,7 @@ export default function Hero() {
                 <img
                   src={images[index]}
                   alt="slider"
-                  className="w-40 md:w-52 h-2 md:h-32 object-cover rounded-2xl shadow-2xl transition-all duration-700"
+                  className="w-15 md:w-28 h-15 md:h-28  object-cover rounded-2xl shadow-2xl transition-all duration-700"
                 />
 
                 Leaders
