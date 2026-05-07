@@ -11,7 +11,7 @@ const images = [
   "https://cdn.flyonui.com/fy-assets/components/carousel/image-7.png",
 ];
 
-export default function HeroSection() {
+export default function Hero() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -24,21 +24,17 @@ export default function HeroSection() {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden text-white">
-      {/* 🔵 Blurry Background Image */}
       <img
         src={images[index]}
         alt="background"
         className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl transition-all duration-700"
       />
 
-      {/* ⚫ Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
-      {/* 🟢 Main Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
         <div className="flex flex-col items-center gap-10 text-center max-w-7xl w-full">
           
-          {/* TOP LOGOS */}
           <div className="flex flex-col items-center gap-5">
             <p className="text-sm md:text-base font-medium tracking-widest">
               #MOST RECOMMENDED <br />
@@ -66,20 +62,18 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* HERO TITLE */}
           <div className="flex flex-col items-center gap-6">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95]">
               We Create
               <br />
 
-              {/* 🔥 Placeholder Image Inside Heading */}
               <span className="inline-flex items-center gap-6">
                 Category
 
                 <img
                   src={images[index]}
                   alt="slider"
-                  className="w-40 md:w-52 h-24 md:h-32 object-cover rounded-2xl shadow-2xl transition-all duration-700"
+                  className="w-40 md:w-52 h-2 md:h-32 object-cover rounded-2xl shadow-2xl transition-all duration-700"
                 />
 
                 Leaders
@@ -91,7 +85,6 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* BOTTOM TEXTS */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full pt-10 text-sm md:text-base">
             <p className="text-white/80 text-center md:text-left">
               Organic media planners creating, distributing & optimising
@@ -108,7 +101,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* 🔘 Slider Dots */}
       <div className="absolute bottom-6 w-full flex justify-center gap-2 z-20">
         {images.map((_, i) => (
           <button
