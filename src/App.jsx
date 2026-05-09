@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <TopBanner />
       <Navbar />
-      <main className="min-h-[200vh] bg-red-400">
+      <main className="min-h-[200vh]">
         <Home />
       </main>
       <Footer />
